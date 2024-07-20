@@ -1,6 +1,6 @@
 ---
 - name: Installing/Configuring/Uninstalling nginx
-  hosts: web_servers
+  hosts: all
   become: true
   roles:
     - nginx
