@@ -1,5 +1,4 @@
 ---
-# tasks file for roles/ping
 - name: Testing connectivity...
   hosts: all
   roles:
