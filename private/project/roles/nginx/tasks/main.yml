@@ -1,2 +1,10 @@
 ---
-# tasks file for roles/nginx
+- name: Install nginx
+  import_tasks: install_nginx.yml
+  tags:
+    - install_nginx
+
+- name: Uninstall nginx
+  import_tasks: uninstall_nginx.yml
+  tags:
+    - uninstall_nginx

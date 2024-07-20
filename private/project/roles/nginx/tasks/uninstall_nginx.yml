@@ -1,0 +1,16 @@
+---
+- name: Running apt to uninstall nginx
+  apt: 
+    name: nginx
+    state: absent
+    purge: true
+
+- name: Clean up ...
+  file: 
+    path: "{{ item }}"
+    state: absent
+  loop:
+    - /var/www
+    - /etc/nginx
+    - /var/log/nginx
+
