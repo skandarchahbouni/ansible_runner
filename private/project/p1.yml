@@ -1,0 +1,6 @@
+---
+- name: Testing play ...
+  hosts: localhost
+  tasks:
+    - name: pinging ...
+      ping:
