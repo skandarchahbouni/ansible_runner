@@ -1,6 +1,6 @@
 ---
 - name: Testing play ...
-  hosts: localhost
+  hosts: all
   tasks:
     - name: pinging ...
       ping:
