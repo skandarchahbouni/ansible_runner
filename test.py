@@ -20,11 +20,15 @@ def generate_ansible_inventory(hosts, file_path):
         yaml.dump(inventory, file, default_flow_style=False)
 
 # Example usage:
+# hosts = [
+#     {'alias': 'host1', 'host': '192.168.1.1', 'user': 'user1', 'group': 'group1'},
+#     {'alias': 'host2', 'host': '192.168.1.2', 'user': 'user2'},
+#     {'alias': 'host3', 'host': '192.168.1.3', 'group': 'group2'},
+#     {'alias': 'host4', 'host': '192.168.1.4'}
+# ]
+
 hosts = [
-    {'alias': 'host1', 'host': '192.168.1.1', 'user': 'user1', 'group': 'group1'},
-    {'alias': 'host2', 'host': '192.168.1.2', 'user': 'user2'},
-    {'alias': 'host3', 'host': '192.168.1.3', 'group': 'group2'},
-    {'alias': 'host4', 'host': '192.168.1.4'}
+    {'alias': 'host1', 'host': '13.83.121.162', 'user': 'azureuser'}
 ]
 
 file_path = './private/inventory/inventory.yml'
